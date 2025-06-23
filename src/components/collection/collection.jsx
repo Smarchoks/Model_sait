@@ -107,7 +107,7 @@ export const Collection = () => {
           </div>
           <Link
             className="collection-button" 
-            href="../collection-page"
+            to="../collection-page"
           >
             Коллекция 2025
           </Link>
