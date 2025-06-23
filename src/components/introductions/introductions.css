@@ -1,0 +1,75 @@
+/* Основные стили Margiela */
+.introductions_wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Courier New', monospace;
+    color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.brand-name {
+    font-size: 5vw;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.brand-name::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    background: #000;
+}
+
+.tagline {
+    font-size: 1.2vw;
+    letter-spacing: 0.3em;
+    max-width: 60%;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+/* Эффект "размытой копии" как у Margiela */
+.shadow-text {
+    position: absolute;
+    font-size: 6vw;
+    opacity: 0.03;
+    z-index: -1;
+    user-select: none;
+}
+
+/* Нумерация в стиле Margiela */
+.collection-number {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.8rem;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 10vw;
+        letter-spacing: 0.3em;
+    }
+    
+    .tagline {
+        font-size: 3vw;
+        max-width: 80%;
+    }
+    
+    .shadow-text {
+        font-size: 12vw;
+    }
+}

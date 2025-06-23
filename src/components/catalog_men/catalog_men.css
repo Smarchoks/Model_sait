@@ -1,0 +1,197 @@
+
+.product-name {
+  margin: 8px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+.catalog_men-button:hover {
+background-color: #d7d7d3;
+cursor: pointer;
+
+}
+
+  .catalog_men-cards:hover {
+    scale: 1.10;
+  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+   /* Основные стили каталога */
+.catalog_men-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 90px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Заголовки категорий */
+.catalog_men_name__wrapper {
+  display: flex;
+  padding: 90px 0 0;
+  align-items: center;
+}
+
+.fraction {
+  font-family: "Margiela Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.catalog_men-name {
+  color: #646462;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+/* Сетка карточек */
+.catalog_men-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+/* Карточка товара */
+.catalog_men-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.catalog_men-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Изображение товара */
+.catalog_men-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.catalog_men-card:hover .catalog_men-image {
+  transform: scale(1.03);
+}
+
+/* Информация о товаре */
+.catalog_men-info {
+  width: 100%;
+  text-align: center;
+}
+
+.catalog_men-title {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.catalog_men-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Кнопка добавления */
+.catalog_men-button {
+  background-color: transparent;
+  border: 1px solid #222;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  width: 80%;
+  margin-top: auto;
+}
+
+.catalog_men-button:hover {
+  background-color: #222;
+}
+
+.catalog_men-button:active {
+  transform: scale(0.95);
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 768px) {
+  .catalog_men-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .catalog_men-name, .fraction {
+    font-size: 1.2rem;
+  }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 480px) {
+  .catalog_men-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .catalog_men-card {
+    padding: 10px;
+  }
+  
+  .catalog_men-name, .fraction {
+    font-size: 1rem;
+  }
+}
+
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Комментарии для себя:
+   - Сделал карточку кликабельной целиком
+   - Добавил плавные анимации при наведении
+   - Реализовал адаптивную сетку через CSS Grid
+   - Оптимизировал отображение цен
+   - Добавил ленивую загрузку изображений
+   - Улучшил семантику (использовал заголовки)
+*/

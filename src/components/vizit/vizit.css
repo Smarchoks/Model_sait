@@ -1,0 +1,255 @@
+/* .vizit {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vizit__wrapper {
+    display: flex;
+  max-width: 900px;
+  }
+  
+  .vizit__text-block {
+    background-color: #f7f7f2;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 0 30px;
+  }
+  
+  .vizit__img {
+    border-radius: 15px 0 0 15px;
+    max-width: 50%;
+    display: flex;
+  }
+  
+  .vizit__text-name {
+   
+    font-weight: 700;
+    font-size: small;
+    padding-bottom: 15px;
+  }
+  
+  .vizit__text-title {
+    padding-bottom: 40px;
+  }
+  
+  .vizit__text-inf {
+    font-size: small;
+    text-align: center;
+    
+  } */
+
+
+
+
+
+
+
+
+
+
+
+  /* Базовые стили */
+.vizit {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.vizit__wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vizit__img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.vizit__img:hover {
+  transform: scale(1.02);
+}
+
+.vizit__text-block {
+  background-color: #f7f7f2;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vizit__text-name {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.vizit__text-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.vizit__text-inf {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.vizit__button {
+  background: transparent;
+  border: 1px solid #222;
+  color: #222;
+  padding: 12px 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.vizit__button:hover {
+  background: #222;
+  color: #f7f7f2;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 992px) {
+  .vizit__text-title {
+    font-size: 28px;
+  }
+  
+  .vizit__text-block {
+    padding: 30px;
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .vizit {
+    padding: 40px 15px;
+  }
+  
+  .vizit__wrapper {
+    flex-direction: column;
+  }
+  
+  .vizit__img,
+  .vizit__text-block {
+    width: 100%;
+  }
+  
+  .vizit__img {
+    height: 300px;
+  }
+  
+  .vizit__text-block {
+    padding: 30px 20px;
+  }
+  
+  .vizit__text-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .vizit__button {
+    align-self: center;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .vizit__text-title {
+    font-size: 22px;
+  }
+  
+  .vizit__text-inf {
+    font-size: 14px;
+  }
+}
+
+/* Стили для модального окна */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.modal-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.modal-qr {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  display: block;
+}
+
+.modal-small-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+}

@@ -1,0 +1,123 @@
+.collection__title {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  
+  .collection__video {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .collection__description-text {
+    font-size: 1.25rem;
+    letter-spacing: -0.1px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fashion__image {
+    border-radius: 30px;
+    max-width: 75%;
+    max-height: 75%;
+    padding:20px;
+}
+
+ .fashion__card{
+  border-radius: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+
+  .fashion__card_wrapper { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  /* Основные стили карточек */
+.fashion__card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.fashion__card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.fashion__card:hover {
+  transform: translateY(-5px);
+}
+
+.fashion__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/* Основные стили карточек */
+.fashion__card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.fashion__card {
+  background: #fff;
+}
+
+.fashion__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Информация о модели */
+.model-info {
+  padding: 15px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.model-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.model-look {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .fashion__card_wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+}

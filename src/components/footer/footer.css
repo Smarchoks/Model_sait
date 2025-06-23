@@ -1,0 +1,138 @@
+/* .footer {
+    display: flex;
+   justify-content: center;
+   padding-top: 30px;
+  
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+      width: 75%;
+   
+  }
+  
+  
+  .footer__wrapper-links{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .footer__headling{
+    padding-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .footer__block-btn:hover {
+    scale: 0.95;
+  }
+  
+  .footer__text {
+    padding-bottom: 10px;
+  }
+  
+  .footer__btn {
+    border-radius: 15px solid black;
+   
+  }
+  
+  
+  
+   */
+
+   /* Основные стили футера */
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос колонок */
+  justify-content: space-between;
+  gap: 30px; /* Отступ между колонками */
+}
+
+/* Стили для колонок */
+.footer__col {
+  flex: 1;
+  min-width: 200px; /* Минимальная ширина колонки */
+  margin-bottom: 20px;
+}
+
+/* Заголовки в футере */
+.footer__heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Текст в футере */
+.footer__text {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Социальные иконки */
+.footer__social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer__social-link {
+  transition: transform 0.3s ease;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1);
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 768px) {
+  .footer__wrapper {
+    gap: 20px;
+  }
+  
+  .footer__col {
+    flex: 0 0 45%; /* Две колонки в ряд */
+  }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 480px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer__col {
+    flex: 1 1 100%; /* Одна колонка */
+    text-align: center;
+  }
+  
+  .footer__social {
+    justify-content: center;
+  }
+  
+  .footer__heading {
+    margin-bottom: 15px;
+  }
+}
+
+/* Комментарий для себя: 
+   - Добавил семантичные заголовки h3 вместо p
+   - Улучшил доступность с aria-label
+   - Сделал плавные hover-эффекты
+   - Оптимизировал отступы для мобильных
+   - Добавил флекс-гапы вместо margin
+*/

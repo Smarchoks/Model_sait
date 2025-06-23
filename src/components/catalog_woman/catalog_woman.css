@@ -1,0 +1,119 @@
+.product-name {
+  margin: 8px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #222;
+  font-weight: normal;
+}
+
+ .catalog_men-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.catalog_men_name__wrapper {
+display: flex;
+padding-top: 90px;
+}
+
+.fraction {
+    font-family: "Margiela Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5000rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+
+.catalog_men-name {
+    color: #646462;
+    
+    font-weight: 700;
+    font-size: 1.5000rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    
+}
+
+
+
+
+.catalog_men-wrapper {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    display: flex;
+    gap: 25px;
+    justify-items: center;
+    justify-content: center;
+    
+
+}
+
+.catalog_men-cards {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    transition: scale .2s ease-in;
+}
+
+.catalog_men-image {
+    border-radius: 40px;
+}
+
+.catalog_men-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: .4s ease;
+    }
+
+  .catalog_men-button:active {
+  background-color: #111;
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+
+
+
+
+
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+
+
+
+  
+.catalog_men-button:hover {
+background-color: #d7d7d3;
+cursor: pointer;
+
+}
+
+  .catalog_men-cards:hover {
+    scale: 1.10;
+  }
+
+
+  .product-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0;
+  text-align: center;
+} 
