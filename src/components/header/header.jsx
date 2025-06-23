@@ -4,7 +4,7 @@ import logo from "../header/img/logo.jpg";
 import logo1 from "../header/img/logo1.png";
 import logo2 from "../header/img/logo2.jpg";
 import trash from "../header/img/trash_icon.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 
 
