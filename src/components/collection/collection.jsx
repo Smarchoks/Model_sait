@@ -1,7 +1,7 @@
 import "./collection.css";
 import collect from ".//img/collect.jpg";
 import bag from "./img/bag.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 export const Collection = () => {
   return (
     <>
