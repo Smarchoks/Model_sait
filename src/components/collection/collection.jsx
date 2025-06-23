@@ -1,7 +1,7 @@
 import "./collection.css";
 import collect from ".//img/collect.jpg";
 import bag from "./img/bag.jpg";
-
+import { Link } from "react-router-dom";
 export const Collection = () => {
   return (
     <>
@@ -105,12 +105,12 @@ export const Collection = () => {
             <p className="collection-subtitle">Сезонная подборка для подарков</p>
             <h2 className="collection-title">Великолепие металлических оттенков</h2>
           </div>
-          <a 
+          <Link
             className="collection-button" 
             href="../collection-page"
           >
             Коллекция 2025
-          </a>
+          </Link>
         </div>
       </div>
 {/* 

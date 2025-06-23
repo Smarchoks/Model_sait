@@ -4,7 +4,7 @@ import logo from "../header/img/logo.jpg";
 import logo1 from "../header/img/logo1.png";
 import logo2 from "../header/img/logo2.jpg";
 import trash from "../header/img/trash_icon.png";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -29,31 +29,31 @@ export const Header = () => {
 
           {/* Основное меню (скрывается на мобильных) */}
           <nav className="header__group-links">
-            <a className="header__link" href="/woman-page">Женщинам</a>
-            <a className="header__link" href="/men-page">Мужчинам</a>
-            <a className="header__link" href="/about_us-page">О нас</a>
+            <Link className="header__link" to="/woman-page">Женщинам</Link>
+            <Link className="header__link" to="/men-page">Мужчинам</Link>
+            <Link className="header__link" to="/about_us-page">О нас</Link>
           </nav>
         </div>
 
         {/* Логотип */}
-        <a href="/" className="header__logo">
+        <Link to="/" className="header__logo">
           <img src={logo2} alt="Логотип" width={100} height={50} />
-        </a>
+        </Link>
 
         {/* Иконка корзины (всегда видна) */}
         <div className="header__cart">
-          <a href="/basket-page" className="cart__icon">
+          <Link to="/basket-page" className="cart__icon">
             <img src={trash} alt="Корзина" width={30} height={25} />
-          </a>
+          </Link>
         </div>
 
         {/* Бургер-меню (появляется при клике) */}
         {isMenuOpen && (
           <div className="burger-menu">
-            <a className="burger-menu__link" href="/woman-page">Женщинам</a>
-            <a className="burger-menu__link" href="/men-page">Мужчинам</a>
-            <a className="burger-menu__link" href="/about_us-page">О нас</a>
-            <a className="burger-menu__link" href="/basket-page">Корзина</a>
+            <Link className="burger-menu__link" to="/woman-page">Женщинам</Link>
+            <Link className="burger-menu__link" to="/men-page">Мужчинам</Link>
+            <Link className="burger-menu__link" to="/about_us-page">О нас</Link>
+            <Link className="burger-menu__link" to="/basket-page">Корзина</Link>
           </div>
         )}
       </div>
