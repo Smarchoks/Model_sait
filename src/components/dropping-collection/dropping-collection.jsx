@@ -12,16 +12,16 @@ import model10 from "../../components/dropping-collection/img/model10.jpg";
 
 export const DropColl = () => {
   const models = [
-    { id: 1, name: "Артём", surname: "Соколов", look: "Деконструированный блейзер", image: model1 },
-    { id: 2, name: "Дмитрий", surname: "Иванов", look: "Вощёное пальто", image: model2 },
+    { id: 1, name: "Анна", surname: "Смирнова", look: "Деконструированный блейзер", image: model1 },
+    { id: 2, name: "Екатерина ", surname: "Волкова", look: "Вощёное пальто", image: model2 },
     { id: 3, name: "Кирилл", surname: "Петров", look: "Шёлковая рубашка", image: model3 },
     { id: 4, name: "Максим", surname: "Кузнецов", look: "Кожаные брюки", image: model4 },
     { id: 5, name: "Алексей", surname: "Попов", look: "Деним с эффектом поношенности", image: model5 },
     { id: 6, name: "Андрей", surname: "Васильев", look: "Льняная рубашка-оверсайз", image: model6 },
     { id: 7, name: "Павел", surname: "Смирнов", look: "Авангардный костюм", image: model7 },
-    { id: 8, name: "Никита", surname: "Фёдоров", look: "Шерстяное пальто", image: model8 },
-    { id: 9, name: "Сергей", surname: "Николаев", look: "Асимметричный жилет", image: model9 },
-    { id: 10, name: "Иван", surname: "Орлов", look: "Тренч с рваными краями", image: model10 },
+    { id: 8, name: "Наталья", surname: "Морозова", look: "Шерстяное пальто", image: model8 },
+    { id: 9, name: "Анастасия", surname: " Мельникова", look: "Асимметричный жилет", image: model9 },
+    { id: 10, name: "Ольга", surname: "Белова", look: "Тренч с рваными краями", image: model10 },
   ];
 
   return (
